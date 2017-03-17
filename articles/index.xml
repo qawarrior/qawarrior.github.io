@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on QAWarrior Freelance Developer</title>
+    <link>https://example.com/articles/index.xml</link>
+    <description>Recent content in Articles on QAWarrior Freelance Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Paul H Cassidy</copyright>
+    <lastBuildDate>Sat, 20 Aug 2016 08:03:29 -0700</lastBuildDate>
+    <atom:link href="/articles/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Learning The Go Language</title>
+      <link>https://example.com/articles/learning-the-go-language/</link>
+      <pubDate>Sat, 20 Aug 2016 08:03:29 -0700</pubDate>
+      
+      <guid>https://example.com/articles/learning-the-go-language/</guid>
+      <description>&lt;p&gt;The Go language or golang as it is refered to is a very powerful tool to learn.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
