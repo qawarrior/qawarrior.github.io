@@ -11,12 +11,30 @@
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Golang And Why It Rules</title>
-      <link>https://qawarrior.github.io/post/golang-and-why-it-rules/</link>
-      <pubDate>Mon, 20 Mar 2017 11:49:12 -0700</pubDate>
+      <title>Cmdline Reference Guide</title>
+      <link>https://qawarrior.github.io/post/cmdline-reference-guide/</link>
+      <pubDate>Mon, 17 Apr 2017 10:52:54 -0700</pubDate>
       
-      <guid>https://qawarrior.github.io/post/golang-and-why-it-rules/</guid>
-      <description>&lt;p&gt;Googles Go (golang) is a radically different language that is so fun to use. It ROCKS!!!!!!&lt;/p&gt;
+      <guid>https://qawarrior.github.io/post/cmdline-reference-guide/</guid>
+      <description>
+
+&lt;h3 id=&#34;go-tool-cmds&#34;&gt;Go Tool Cmds&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Build pkg and all sub-pkgs - &lt;code&gt;go build -v ./...&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;git-cmds&#34;&gt;Git Cmds&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Stage all files for commit - &lt;code&gt;git add --all&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;hugo-site-cmds&#34;&gt;Hugo Site Cmds&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Run Hugo development server - &lt;code&gt;hugo server --watch&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
 </description>
     </item>
     
