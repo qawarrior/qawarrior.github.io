@@ -12,11 +12,13 @@
     
     <item>
       <title>Cmdline Reference Guide</title>
-      <link>https://qawarrior.github.io/post/cmdline-reference-guide/</link>
+      <link>https://qawarrior.github.io/2017/04/17/cmdline-reference-guide</link>
       <pubDate>Mon, 17 Apr 2017 10:52:54 -0700</pubDate>
       
-      <guid>https://qawarrior.github.io/post/cmdline-reference-guide/</guid>
+      <guid>https://qawarrior.github.io/2017/04/17/cmdline-reference-guide</guid>
       <description>
+
+&lt;p&gt;These commands need to be ran from the working directory.&lt;/p&gt;
 
 &lt;h3 id=&#34;go-tool-cmds&#34;&gt;Go Tool Cmds&lt;/h3&gt;
 
