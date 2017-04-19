@@ -11,11 +11,11 @@
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Command line Reference Guide</title>
-      <link>https://qawarrior.github.io/2017/04/17/command-line-reference-guide</link>
+      <title>Commandline Reference Guide</title>
+      <link>https://qawarrior.github.io/2017/04/17/commandline-reference-guide</link>
       <pubDate>Mon, 17 Apr 2017 10:52:54 -0700</pubDate>
       
-      <guid>https://qawarrior.github.io/2017/04/17/command-line-reference-guide</guid>
+      <guid>https://qawarrior.github.io/2017/04/17/commandline-reference-guide</guid>
       <description>
 
 &lt;p&gt;Theses commands need to be found in the path environment variable.&lt;/p&gt;
