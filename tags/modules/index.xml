@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modules on Paul Cassidy Software Developer</title>
+    <link>https://qawarrior.github.io/tags/modules/index.xml</link>
+    <description>Recent content in Modules on Paul Cassidy Software Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Paul H Cassidy</copyright>
+    <atom:link href="/tags/modules/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>PoshLogger 2.0 Now On Github</title>
+      <link>https://qawarrior.github.io/2017/04/28/poshlogger-2.0-now-on-github</link>
+      <pubDate>Fri, 28 Apr 2017 13:16:00 +0000</pubDate>
+      
+      <guid>https://qawarrior.github.io/2017/04/28/poshlogger-2.0-now-on-github</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PowerShell Objects - Import-Module Pt 3</title>
+      <link>https://qawarrior.github.io/2014/06/11/powershell-objects---import-module-pt-3</link>
+      <pubDate>Wed, 11 Jun 2014 14:37:00 +0000</pubDate>
+      
+      <guid>https://qawarrior.github.io/2014/06/11/powershell-objects---import-module-pt-3</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: Arial, Helvetica, sans-serif;&#34;&gt;The -AsCustomObject switch on the New-Module Cmdlet is also available in the Import-Module which opens up a whole new world of using PowerShell objects and modules. Imagine you need to import 2 modules to work with Hyper-V and VMWare in your script but after importing them in that order you notice that Get-VM for VMWare is visiable and the Get-VM command from the Hyper-v module is hidden. The are a couple of way to handle modules with command that are the same name. One would be to use the get-command command to invoke the correct command from the correct module. My perfered way is to use the -AsCustomObject switch when importing the modules. This way I hsave the modules and there commands neatly reference in variable so that it is easy to tell which module the command i am executng is going to run against. Example (sudo-code   module names may net be correct)&lt;/span&gt;&lt;br /&gt;&lt;span style=&#34;font-family: Arial, Helvetica, sans-serif;&#34;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&#34;font-family: Arial, Helvetica, sans-serif;&#34;&gt;. &lt;script src=&#34;http://pastebin.com/embed_js.php?i=hPYzXnPA&#34;&gt;&lt;/script&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ISESteriods makes ISE Professional Scripting IDE</title>
+      <link>https://qawarrior.github.io/2014/05/30/isesteriods-makes-ise-professional-scripting-ide</link>
+      <pubDate>Fri, 30 May 2014 12:18:00 +0000</pubDate>
+      
+      <guid>https://qawarrior.github.io/2014/05/30/isesteriods-makes-ise-professional-scripting-ide</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>New Project: PoshLogger</title>
+      <link>https://qawarrior.github.io/2011/03/29/new-project-poshlogger</link>
+      <pubDate>Tue, 29 Mar 2011 10:56:00 +0000</pubDate>
+      
+      <guid>https://qawarrior.github.io/2011/03/29/new-project-poshlogger</guid>
+      <description>&lt;p&gt;&amp;#160;&lt;/p&gt;  &lt;p&gt;New on Codeplex @ &lt;a href=&#34;http://poshlogger.codeplex&#34;&gt;http://poshlogger.codeplex&lt;/a&gt; my project to create a good, easy, unified logger for powerShell scripts, and PowerShell applications. I started with a script that Joel Bennet posted on poshcode.org and next thing you know I had a simple logger that I have been using in my internal projects on a day to day basis. If your looking for a logger jump in and help create a really great Logging Experience in PowerShell. My thanks to Joel for the Idea and thanks to the log4net team for the object model. &lt;/p&gt;  &lt;p&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;Import-Module&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #0000ff&#34;&gt;PoshLogger&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;     &lt;br /&gt;      &lt;br /&gt;&lt;/span&gt;&lt;span style=&#34;color: #800080&#34;&gt;$Mylogger&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #ff0000&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;Get-Logger&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;-Name&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #800000&#34;&gt;&#39;&lt;/span&gt;&lt;span style=&#34;color: #800000&#34;&gt;Test 123&lt;/span&gt;&lt;span style=&#34;color: #800000&#34;&gt;&#39;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;-ConsoleLog&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;-EventLog&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;-RollingFileLog&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;-Folder&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #800000&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #008000; text-decoration: underline&#34;&gt;.\Logs&lt;/span&gt;&lt;span style=&#34;color: #800000&#34;&gt;&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;     &lt;br /&gt;&lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;Set-DefaultLogger&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;-Logger&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #800080&#34;&gt;$MyLogger&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;     &lt;br /&gt;      &lt;br /&gt;&lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;Push-LogContext&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;-Name&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #800000&#34;&gt;&amp;quot;My Context&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;     &lt;br /&gt;&lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;Write-Log&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;-Message&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #800000&#34;&gt;&amp;quot;Logging This To Many Various Target&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;-LogLevel&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color: #800000&#34;&gt;&#39;&lt;/span&gt;&lt;span style=&#34;color: #800000&#34;&gt;INFO&lt;/span&gt;&lt;span style=&#34;color: #800000&#34;&gt;&#39;&lt;/span&gt;&lt;span style=&#34;color: #000000&#34;&gt;     &lt;br /&gt;&lt;/span&gt;&lt;span style=&#34;color: #5f9ea0&#34;&gt;Pop-Location&lt;/span&gt;&lt;/p&gt;  
+</description>
+    </item>
+    
+  </channel>
+</rss>

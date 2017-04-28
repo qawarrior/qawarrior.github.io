@@ -11,6 +11,15 @@
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>PoshLogger 2.0 Now On Github</title>
+      <link>https://qawarrior.github.io/2017/04/28/poshlogger-2.0-now-on-github</link>
+      <pubDate>Fri, 28 Apr 2017 13:16:00 +0000</pubDate>
+      
+      <guid>https://qawarrior.github.io/2017/04/28/poshlogger-2.0-now-on-github</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Cmdline Reference Guide</title>
       <link>https://qawarrior.github.io/2017/04/17/cmdline-reference-guide</link>
       <pubDate>Mon, 17 Apr 2017 10:52:54 -0700</pubDate>
@@ -73,6 +82,55 @@
       <pubDate>Mon, 20 Mar 2017 00:00:00 +0000</pubDate>
       
       <guid>https://qawarrior.github.io/project/pswebdriver-github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Winner is ... Wait-Object</title>
+      <link>https://qawarrior.github.io/2014/07/17/the-winner-is-...-wait-object</link>
+      <pubDate>Thu, 17 Jul 2014 10:06:00 +0000</pubDate>
+      
+      <guid>https://qawarrior.github.io/2014/07/17/the-winner-is-...-wait-object</guid>
+      <description>&lt;p&gt;I decided I like the for where is the object i was waiting for was returned, I would pass the InputObject on down the pipeline but if not Write-Error and return null. This allows me to 1. let the command run and do a null check on the return value to decide if the script should continue&lt;br /&gt;&lt;br /&gt;Example 1.&lt;br /&gt;$returned = $false | Wait-Object -ScriptBlock {Test-Path C:\Wait\For\Removal } -TimeOut 10&lt;br /&gt;&lt;br /&gt;if($returned -ne $null) {&lt;br /&gt;&amp;nbsp; #do something&lt;br /&gt;}&lt;br /&gt;else {&lt;br /&gt;&amp;nbsp; #do something else&lt;br /&gt;}&lt;br /&gt;&lt;br /&gt;Also this lets me use a try / catch &amp;nbsp;with the ErrorAction set to stop causing the the catch to trigger in event of failure.&lt;br /&gt;&lt;br /&gt;Example 2.&lt;br /&gt;try {&lt;br /&gt;&amp;nbsp; $returned = $false | Wait-Object -ScriptBlock {Test-Path C:\Wait\For\Removal } -TimeOut 10 -ErrorAction Stop&lt;br /&gt;}&lt;br /&gt;catch {&lt;br /&gt;&amp;nbsp; exit&lt;br /&gt;}&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;Here is the Code: &lt;script src=&#34;https://gist.github.com/qawarrior/b9acc089f0b04d1a126b.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wait-Object Function Takes Place of Wait-ValueReturned</title>
+      <link>https://qawarrior.github.io/2014/07/14/wait-object-function-takes-place-of-wait-valuereturned</link>
+      <pubDate>Mon, 14 Jul 2014 10:42:00 +0000</pubDate>
+      
+      <guid>https://qawarrior.github.io/2014/07/14/wait-object-function-takes-place-of-wait-valuereturned</guid>
+      <description>&lt;p&gt;I previously posted a function Wait-ValueReturned but is did not seem like it flowed with the rest of PowerShell so I re factored the code into Wait-Object but I am not sure about how the command should return. I have considered first return bool from the command to indicate success, which means the command will always return true or false. My other option is to return to object that was being waited on if success and return error record on fail. here is examples of both. Which makes more sense to use in a script&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;Returning Bool: &lt;script src=&#34;https://gist.github.com/qawarrior/b9acc089f0b04d1a126b.js&#34;&gt;&lt;/script&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp;Returning object or error: &lt;script src=&#34;https://gist.github.com/qawarrior/b9acc089f0b04d1a126b.js&#34;&gt;&lt;/script&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Utility Function Wait-ValueReturned</title>
+      <link>https://qawarrior.github.io/2014/06/23/new-utility-function-wait-valuereturned</link>
+      <pubDate>Mon, 23 Jun 2014 08:02:00 +0000</pubDate>
+      
+      <guid>https://qawarrior.github.io/2014/06/23/new-utility-function-wait-valuereturned</guid>
+      <description>&lt;p&gt;I Just need a way to block a scripts execution while I wait on some command to return the correct value. So I created this little function to allow me to pass the command or commands and what i expect back and let it handle the work instead of littering my scripts main body with a bunch of loops, if / else, and sleeps, I can use this to encapsulate all that into a clean function.&lt;br&gt;&lt;script src=&#34;https://gist.github.com/qawarrior/01c58bbcec77b3465b2c.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>PowerShell Objects - Import-Module Pt 3</title>
+      <link>https://qawarrior.github.io/2014/06/11/powershell-objects---import-module-pt-3</link>
+      <pubDate>Wed, 11 Jun 2014 14:37:00 +0000</pubDate>
+      
+      <guid>https://qawarrior.github.io/2014/06/11/powershell-objects---import-module-pt-3</guid>
+      <description>&lt;p&gt;&lt;span style=&#34;font-family: Arial, Helvetica, sans-serif;&#34;&gt;The -AsCustomObject switch on the New-Module Cmdlet is also available in the Import-Module which opens up a whole new world of using PowerShell objects and modules. Imagine you need to import 2 modules to work with Hyper-V and VMWare in your script but after importing them in that order you notice that Get-VM for VMWare is visiable and the Get-VM command from the Hyper-v module is hidden. The are a couple of way to handle modules with command that are the same name. One would be to use the get-command command to invoke the correct command from the correct module. My perfered way is to use the -AsCustomObject switch when importing the modules. This way I hsave the modules and there commands neatly reference in variable so that it is easy to tell which module the command i am executng is going to run against. Example (sudo-code   module names may net be correct)&lt;/span&gt;&lt;br /&gt;&lt;span style=&#34;font-family: Arial, Helvetica, sans-serif;&#34;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&#34;font-family: Arial, Helvetica, sans-serif;&#34;&gt;. &lt;script src=&#34;http://pastebin.com/embed_js.php?i=hPYzXnPA&#34;&gt;&lt;/script&gt;&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>ISESteriods makes ISE Professional Scripting IDE</title>
+      <link>https://qawarrior.github.io/2014/05/30/isesteriods-makes-ise-professional-scripting-ide</link>
+      <pubDate>Fri, 30 May 2014 12:18:00 +0000</pubDate>
+      
+      <guid>https://qawarrior.github.io/2014/05/30/isesteriods-makes-ise-professional-scripting-ide</guid>
       <description></description>
     </item>
     

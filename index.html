@@ -383,6 +383,13 @@
     <h1>Recent Posts</h1>
     
     
+    <p class="view-all">
+      <a href="/post/">
+        More Posts
+        <i class="fa fa-angle-double-right"></i>
+      </a>
+    </p>
+    
 
   </div>
   <div class="col-xs-12 col-md-8">
@@ -390,6 +397,64 @@
     
 
     
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="https://qawarrior.github.io/2017/04/28/poshlogger-2.0-now-on-github" itemprop="url">PoshLogger 2.0 Now On Github</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2017-04-28 13:16:00 &#43;0000 UTC" itemprop="datePublished">
+      Fri, Apr 28, 2017
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/powershell">Powershell</a
+    >, 
+    
+    <a href="/tags/projects">Projects</a
+    >, 
+    
+    <a href="/tags/modules">Modules</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    
+    
+  </div>
+  <p class="read-more">
+    <a href="https://qawarrior.github.io/2017/04/28/poshlogger-2.0-now-on-github" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
       
         
         
@@ -430,6 +495,131 @@ Go Tool Commands Ran from the root of the main package.  Build package and all s
   </div>
   <p class="read-more">
     <a href="https://qawarrior.github.io/2017/04/17/cmdline-reference-guide" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="https://qawarrior.github.io/2014/07/17/the-winner-is-...-wait-object" itemprop="url">The Winner is ... Wait-Object</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2014-07-17 10:06:00 &#43;0000 UTC" itemprop="datePublished">
+      Thu, Jul 17, 2014
+    </time>
+  </span>
+
+  
+
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    I decided I like the for where is the object i was waiting for was returned, I would pass the InputObject on down the pipeline but if not Write-Error and return null. This allows me to 1. let the command run and do a null check on the return value to decide if the script should continue
+Example 1.
+$returned = $false | Wait-Object -ScriptBlock {Test-Path C:\Wait\For\Removal } -TimeOut 10
+    
+  </div>
+  <p class="read-more">
+    <a href="https://qawarrior.github.io/2014/07/17/the-winner-is-...-wait-object" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="https://qawarrior.github.io/2014/07/14/wait-object-function-takes-place-of-wait-valuereturned" itemprop="url">Wait-Object Function Takes Place of Wait-ValueReturned</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2014-07-14 10:42:00 &#43;0000 UTC" itemprop="datePublished">
+      Mon, Jul 14, 2014
+    </time>
+  </span>
+
+  
+
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    I previously posted a function Wait-ValueReturned but is did not seem like it flowed with the rest of PowerShell so I re factored the code into Wait-Object but I am not sure about how the command should return. I have considered first return bool from the command to indicate success, which means the command will always return true or false. My other option is to return to object that was being waited on if success and return error record on fail.
+    
+  </div>
+  <p class="read-more">
+    <a href="https://qawarrior.github.io/2014/07/14/wait-object-function-takes-place-of-wait-valuereturned" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="https://qawarrior.github.io/2014/06/23/new-utility-function-wait-valuereturned" itemprop="url">New Utility Function Wait-ValueReturned</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2014-06-23 08:02:00 &#43;0000 UTC" itemprop="datePublished">
+      Mon, Jun 23, 2014
+    </time>
+  </span>
+
+  
+
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    I Just need a way to block a scripts execution while I wait on some command to return the correct value. So I created this little function to allow me to pass the command or commands and what i expect back and let it handle the work instead of littering my scripts main body with a bunch of loops, if / else, and sleeps, I can use this to encapsulate all that into a clean function.
+    
+  </div>
+  <p class="read-more">
+    <a href="https://qawarrior.github.io/2014/06/23/new-utility-function-wait-valuereturned" class="btn btn-primary btn-outline">
       CONTINUE READING
     </a>
   </p>

@@ -150,6 +150,51 @@
   
   <div>
     
+    <h2><a href="https://qawarrior.github.io/2017/04/28/poshlogger-2.0-now-on-github">PoshLogger 2.0 Now On Github</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2017-04-28 13:16:00 &#43;0000 UTC" itemprop="datePublished">
+      Fri, Apr 28, 2017
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/powershell">Powershell</a
+    >, 
+    
+    <a href="/tags/projects">Projects</a
+    >, 
+    
+    <a href="/tags/modules">Modules</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      
+      
+    </p></div>
+  </div>
+  
+  <div>
+    
     <h2><a href="https://qawarrior.github.io/2017/04/17/cmdline-reference-guide">Cmdline Reference Guide</a></h2>
     
 
@@ -180,8 +225,319 @@ Go Tool Commands Ran from the root of the main package.  Build package and all s
     </p></div>
   </div>
   
+  <div>
+    
+    <h2><a href="https://qawarrior.github.io/2014/07/17/the-winner-is-...-wait-object">The Winner is ... Wait-Object</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2014-07-17 10:06:00 &#43;0000 UTC" itemprop="datePublished">
+      Thu, Jul 17, 2014
+    </time>
+  </span>
 
   
+
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      I decided I like the for where is the object i was waiting for was returned, I would pass the InputObject on down the pipeline but if not Write-Error and return null. This allows me to 1. let the command run and do a null check on the return value to decide if the script should continue
+Example 1.
+$returned = $false | Wait-Object -ScriptBlock {Test-Path C:\Wait\For\Removal } -TimeOut 10
+      
+    </p></div>
+  </div>
+  
+  <div>
+    
+    <h2><a href="https://qawarrior.github.io/2014/07/14/wait-object-function-takes-place-of-wait-valuereturned">Wait-Object Function Takes Place of Wait-ValueReturned</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2014-07-14 10:42:00 &#43;0000 UTC" itemprop="datePublished">
+      Mon, Jul 14, 2014
+    </time>
+  </span>
+
+  
+
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      I previously posted a function Wait-ValueReturned but is did not seem like it flowed with the rest of PowerShell so I re factored the code into Wait-Object but I am not sure about how the command should return. I have considered first return bool from the command to indicate success, which means the command will always return true or false. My other option is to return to object that was being waited on if success and return error record on fail.
+      
+    </p></div>
+  </div>
+  
+  <div>
+    
+    <h2><a href="https://qawarrior.github.io/2014/06/23/new-utility-function-wait-valuereturned">New Utility Function Wait-ValueReturned</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2014-06-23 08:02:00 &#43;0000 UTC" itemprop="datePublished">
+      Mon, Jun 23, 2014
+    </time>
+  </span>
+
+  
+
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      I Just need a way to block a scripts execution while I wait on some command to return the correct value. So I created this little function to allow me to pass the command or commands and what i expect back and let it handle the work instead of littering my scripts main body with a bunch of loops, if / else, and sleeps, I can use this to encapsulate all that into a clean function.
+      
+    </p></div>
+  </div>
+  
+  <div>
+    
+    <h2><a href="https://qawarrior.github.io/2014/06/11/powershell-objects---import-module-pt-3">PowerShell Objects - Import-Module Pt 3</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2014-06-11 14:37:00 &#43;0000 UTC" itemprop="datePublished">
+      Wed, Jun 11, 2014
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/objects">Objects</a
+    >, 
+    
+    <a href="/tags/powershell">Powershell</a
+    >, 
+    
+    <a href="/tags/modules">Modules</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      The -AsCustomObject switch on the New-Module Cmdlet is also available in the Import-Module which opens up a whole new world of using PowerShell objects and modules. Imagine you need to import 2 modules to work with Hyper-V and VMWare in your script but after importing them in that order you notice that Get-VM for VMWare is visiable and the Get-VM command from the Hyper-v module is hidden. The are a couple of way to handle modules with command that are the same name.
+      
+    </p></div>
+  </div>
+  
+  <div>
+    
+    <h2><a href="https://qawarrior.github.io/2014/05/30/isesteriods-makes-ise-professional-scripting-ide">ISESteriods makes ISE Professional Scripting IDE</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2014-05-30 12:18:00 &#43;0000 UTC" itemprop="datePublished">
+      Fri, May 30, 2014
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/powershell">Powershell</a
+    >, 
+    
+    <a href="/tags/projects">Projects</a
+    >, 
+    
+    <a href="/tags/modules">Modules</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      
+      
+    </p></div>
+  </div>
+  
+  <div>
+    
+    <h2><a href="https://qawarrior.github.io/2014/05/29/powershell-talk-at-silicon-valley-code-camp">PowerShell Talk at Silicon Valley Code Camp</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2014-05-29 09:14:00 &#43;0000 UTC" itemprop="datePublished">
+      Thu, May 29, 2014
+    </time>
+  </span>
+
+  
+
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      <p><a href='http://www.siliconvalley-codecamp.com/Presenter/2014/Session/Paul-Cassidy-697' target='_new'   ><img title='I am speaking at silicon valley code camp. Please come to my session!  Click here for details and register if you are not already.' alt='I am speaking at silicon valley code camp. Please come to my session!  Click here for details.'   src='http://www.siliconvalley-codecamp.com/images/speaker01.jpg?w=250' /></a></p>
+
+      
+    </p></div>
+  </div>
+  
+  <div>
+    
+    <h2><a href="https://qawarrior.github.io/2014/05/29/credential-io-script">Credential IO Script</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2014-05-29 08:52:00 &#43;0000 UTC" itemprop="datePublished">
+      Thu, May 29, 2014
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/functions">Functions</a
+    >, 
+    
+    <a href="/tags/powershell">Powershell</a
+    >, 
+    
+    <a href="/tags/projects">Projects</a
+    >, 
+    
+    <a href="/tags/scripts">Scripts</a
+    >, 
+    
+    <a href="/tags/cmdlets">Cmdlets</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      This is an updated version of the Import and Export Credential functions that store the creds in a json format versus the clixml format used by the original created by the guys @ powertips &amp; powershell.com. I also store them in a known location and I use a string for a look up key to store and retrieve them. This allows me to use EFS to further secure the files on the drive.
+      
+    </p></div>
+  </div>
+  
+  <div>
+    
+    <h2><a href="https://qawarrior.github.io/2014/05/24/powershell-objects---new-module-cmdlet-pt.-2">PowerShell Objects - New-Module Cmdlet Pt. 2</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2014-05-24 19:28:00 &#43;0000 UTC" itemprop="datePublished">
+      Sat, May 24, 2014
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/objects">Objects</a
+    >, 
+    
+    <a href="/tags/powershell">Powershell</a
+    >, 
+    
+    <a href="/tags/projects">Projects</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      If you remember Last we talked we had an Object with 4 Public NoteProperties, 1 Public ScriptMethod, and 1 private member. Now if we look at our ScriptMethod it returns a string unless -AsBool is passed, this can cause issues, like hindering ISE&rsquo;s ability to display Intellisense for the method / function because we are unable to decorate our function with the [OutputType] attribute.
+To correct this and make the code much more standardized i want to expose the IsPublished variable since it contains the boolean value indicating if the BlogPost has been published.
+      
+    </p></div>
+  </div>
+  
+
+  
+<nav>
+  <ul class="pager">
+    
+    
+    <li><a href="https://qawarrior.github.io/post/page/2/">Next &raquo;</a></li>
+    
+  </ul>
+</nav>
+
 
 
 </div>

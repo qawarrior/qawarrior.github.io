@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Code Camp on Paul Cassidy Software Developer</title>
+    <link>https://qawarrior.github.io/tags/code-camp/index.xml</link>
+    <description>Recent content in Code Camp on Paul Cassidy Software Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Paul H Cassidy</copyright>
+    <atom:link href="/tags/code-camp/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Silicon Valley Code Camp 2011: PowerShell Types and Objects</title>
+      <link>https://qawarrior.github.io/2011/03/29/silicon-valley-code-camp-2011-powershell-types-and-objects</link>
+      <pubDate>Tue, 29 Mar 2011 09:38:00 +0000</pubDate>
+      
+      <guid>https://qawarrior.github.io/2011/03/29/silicon-valley-code-camp-2011-powershell-types-and-objects</guid>
+      <description>&lt;p&gt;I will be speaking once again at SCCC on Powershell. here is the actual Session overview.&lt;/p&gt;  &lt;p&gt;&amp;#160;&lt;/p&gt;  &lt;h5&gt;PowerShell Types and Objects, Objects and Types. Oh My!&lt;/h5&gt;  &lt;p&gt;Level: Intermediate&amp;#160;&amp;#160; |&amp;#160;&amp;#160; Room: Unknown&lt;/p&gt;  &lt;p&gt;A look at the PowerShell Type System (ETS). PowerShell exposes a few primative Types for use but has a powerful dynamic engine called the Extensible Type System. We will discuss Primatives, Type Accelerators, PSObjects, .NET Types, WMI, ASDI, and the difference between a dynamic type and dynamic objects&lt;/p&gt;  &lt;p&gt;&amp;#160;&lt;/p&gt;  &lt;p&gt;&lt;a title=&#34;CodeCamp at FootHill College.  Click Here for Details and Registration&#34; href=&#34;http://www.SiliconValley-Codecamp.com&#34; target=&#34;_new&#34;&gt;&lt;img alt=&#34;CodeCamp at FootHill College.&#34; src=&#34;http://www.siliconvalley-codecamp.com/DisplayAd.ashx?ImageType=4&#34; longdesc=&#34;&#34; /&gt;&lt;/a&gt;&lt;/p&gt;  
+</description>
+    </item>
+    
+  </channel>
+</rss>
