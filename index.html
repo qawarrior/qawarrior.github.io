@@ -383,13 +383,6 @@
     <h1>Recent Posts</h1>
     
     
-    <p class="view-all">
-      <a href="/post/">
-        More Posts
-        <i class="fa fa-angle-double-right"></i>
-      </a>
-    </p>
-    
 
   </div>
   <div class="col-xs-12 col-md-8">
@@ -437,47 +430,6 @@ Go Tool Commands Ran from the root of the main package.  Build package and all s
   </div>
   <p class="read-more">
     <a href="https://qawarrior.github.io/2017/04/17/cmdline-reference-guide" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="https://qawarrior.github.io/2014/07/14/wait-object-function-takes-place-of-wait-valuereturned" itemprop="url">Wait-Object Function Takes Place of Wait-ValueReturned</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2014-07-14 10:42:00 &#43;0000 UTC" itemprop="datePublished">
-      Mon, Jul 14, 2014
-    </time>
-  </span>
-
-  
-
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    I previously posted a function Wait-ValueReturned but is did not seem like it flowed with the rest of PowerShell so I re factored the code into Wait-Object but I am not sure about how the command should return. I have considered first return bool from the command to indicate success, which means the command will always return true or false. My other option is to return to object that was being waited on if success and return error record on fail.
-    
-  </div>
-  <p class="read-more">
-    <a href="https://qawarrior.github.io/2014/07/14/wait-object-function-takes-place-of-wait-valuereturned" class="btn btn-primary btn-outline">
       CONTINUE READING
     </a>
   </p>
@@ -556,34 +508,20 @@ Go Tool Commands Ran from the root of the main package.  Build package and all s
   
   
   <h3 class="article-title" itemprop="name">
-    <a href="https://qawarrior.github.io/2011/02/15/watching-ps-vars-for-changes---events" itemprop="url">Watching PS Vars for changes - Events</a>
+    <a href="https://qawarrior.github.io/2010/09/10/save-html-as-docx" itemprop="url">Save HTML as DOCX</a>
   </h3>
   
 
 <div class="article-metadata">
 
   <span class="article-date">
-    <time datetime="2011-02-15 13:47:00 &#43;0000 UTC" itemprop="datePublished">
-      Tue, Feb 15, 2011
+    <time datetime="2010-09-10 16:17:00 &#43;0000 UTC" itemprop="datePublished">
+      Fri, Sep 10, 2010
     </time>
   </span>
 
   
 
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/eventing">Eventing</a
-    >, 
-    
-    <a href="/tags/powershell">Powershell</a
-    >
-    
-  </span>
-  
   
 
   
@@ -592,66 +530,12 @@ Go Tool Commands Ran from the root of the main package.  Build package and all s
 
   <div class="article-style" itemprop="articleBody">
     
-    I have a Testing framework built around Powershell and .net. In the framework there are a couple of main objects that their property values are assigned to Globals that are well known and used. The problem was I did not want to make them read only as this causes issues if reloading the framework and or trying to change paths. I needed a way to report back the value of a variable if it changes so i could keep the objects in sync.
+    the other day we had a need to save an HTML file as DOCX. We are creating the HTML file using ConvertT0-HTML. The file contains data that needs to be saved in SharePoint and needs to be editable by others. We decided to save as a DOCX because those in management all have WORD installed but don't have a&#160; Dedicated HTML editor. So here is the Code Enjoy.
+!!! YOU MUST HAVE WORD 2007 or 2010 INSTALLED !
     
   </div>
   <p class="read-more">
-    <a href="https://qawarrior.github.io/2011/02/15/watching-ps-vars-for-changes---events" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="https://qawarrior.github.io/2011/01/04/solved-powershell-fails-as-a-functional-language-if-commands-are-in-modules." itemprop="url">Solved: Powershell fails as a functional language if commands are in modules.</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2011-01-04 14:13:00 &#43;0000 UTC" itemprop="datePublished">
-      Tue, Jan 4, 2011
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/powershell">Powershell</a
-    >, 
-    
-    <a href="/tags/functional">Functional</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    The issue comes down to the scope that the scriptblock being passed into the function gets bound. In the original example the scriptblock was being bound to the callers scope which can not access anything in the module except what was imported into the scope. The fix turns out to be explicitly binding the scriptblock to the modules scope. See the fixed example below. Thanks go out to @Oisin for the fix.
-    
-  </div>
-  <p class="read-more">
-    <a href="https://qawarrior.github.io/2011/01/04/solved-powershell-fails-as-a-functional-language-if-commands-are-in-modules." class="btn btn-primary btn-outline">
+    <a href="https://qawarrior.github.io/2010/09/10/save-html-as-docx" class="btn btn-primary btn-outline">
       CONTINUE READING
     </a>
   </p>

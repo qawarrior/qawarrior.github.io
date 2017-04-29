@@ -44,40 +44,8 @@
     
     
     <url>
-      <loc>https://qawarrior.github.io/2014/07/14/wait-object-function-takes-place-of-wait-valuereturned</loc>
-      <lastmod>2014-07-14T10:42:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>https://qawarrior.github.io/2014/05/29/credential-io-script</loc>
       <lastmod>2014-05-29T08:52:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2011/02/15/watching-ps-vars-for-changes---events</loc>
-      <lastmod>2011-02-15T13:47:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2011/01/04/solved-powershell-fails-as-a-functional-language-if-commands-are-in-modules.</loc>
-      <lastmod>2011-01-04T14:13:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2011/01/04/powershell-fails-as-a-functional-language-if-commands-are-in-modules.</loc>
-      <lastmod>2011-01-04T09:57:00+00:00</lastmod>
     </url>
     
   
@@ -92,42 +60,8 @@
     
     
     <url>
-      <loc>https://qawarrior.github.io/2010/01/03/get-module-info-for-a-function-in-powershell-v2.0</loc>
-      <lastmod>2010-01-03T07:34:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2009/12/23/testing-for-powershell-remoting-test-psremoting</loc>
-      <lastmod>2009-12-23T11:51:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>https://qawarrior.github.io/tags/cmdlets/</loc>
       <lastmod>2014-05-29T08:52:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/tags/eventing/</loc>
-      <lastmod>2011-02-15T13:47:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/tags/functional/</loc>
-      <lastmod>2011-01-04T14:13:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

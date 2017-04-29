@@ -180,33 +180,6 @@
     </div>
   </div>
   
-  <div>
-    <h2><a href="https://qawarrior.github.io/2011/02/15/watching-ps-vars-for-changes---events">Watching PS Vars for changes - Events</a></h2>
-    <div class="article-style">
-      
-      I have a Testing framework built around Powershell and .net. In the framework there are a couple of main objects that their property values are assigned to Globals that are well known and used. The problem was I did not want to make them read only as this causes issues if reloading the framework and or trying to change paths. I needed a way to report back the value of a variable if it changes so i could keep the objects in sync.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="https://qawarrior.github.io/2011/01/04/solved-powershell-fails-as-a-functional-language-if-commands-are-in-modules.">Solved: Powershell fails as a functional language if commands are in modules.</a></h2>
-    <div class="article-style">
-      
-      The issue comes down to the scope that the scriptblock being passed into the function gets bound. In the original example the scriptblock was being bound to the callers scope which can not access anything in the module except what was imported into the scope. The fix turns out to be explicitly binding the scriptblock to the modules scope. See the fixed example below. Thanks go out to @Oisin for the fix.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="https://qawarrior.github.io/2011/01/04/powershell-fails-as-a-functional-language-if-commands-are-in-modules.">Powershell fails as a functional language if commands are in modules.</a></h2>
-    <div class="article-style">
-      
-      I have some functions that contain functions. When I put the Functions in a .ps1 file and Dot Source directly the behave great but if those functions get imported in a module they fail to find the inner function with a CommandNotFound error. It does not matter if the functions are directly in a .psm1 file or if they are dot sourced by the .psm1 file they still fail to find the inner functions.
-      
-    </div>
-  </div>
-  
 
   
 
