@@ -4,14 +4,6 @@
     
     
     <url>
-      <loc>https://qawarrior.github.io/2017/04/28/poshlogger-2.0-now-on-github</loc>
-      <lastmod>2017-04-28T13:16:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>https://qawarrior.github.io/2017/04/17/cmdline-reference-guide</loc>
       <lastmod>2017-04-17T10:52:54-07:00</lastmod>
     </url>
@@ -76,22 +68,6 @@
     
     
     <url>
-      <loc>https://qawarrior.github.io/2014/06/11/powershell-objects---import-module-pt-3</loc>
-      <lastmod>2014-06-11T14:37:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2014/05/30/isesteriods-makes-ise-professional-scripting-ide</loc>
-      <lastmod>2014-05-30T12:18:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>https://qawarrior.github.io/2014/05/29/powershell-talk-at-silicon-valley-code-camp</loc>
       <lastmod>2014-05-29T09:14:00+00:00</lastmod>
     </url>
@@ -102,22 +78,6 @@
     <url>
       <loc>https://qawarrior.github.io/2014/05/29/credential-io-script</loc>
       <lastmod>2014-05-29T08:52:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2014/05/24/powershell-objects---new-module-cmdlet-pt.-2</loc>
-      <lastmod>2014-05-24T19:28:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2014/05/20/powershell-object-creation--new-module-pt.-1</loc>
-      <lastmod>2014-05-20T18:20:00+00:00</lastmod>
     </url>
     
   
@@ -142,14 +102,6 @@
     <url>
       <loc>https://qawarrior.github.io/2011/03/14/powershell-plus-v4.0-released-oh-yeah</loc>
       <lastmod>2011-03-14T09:08:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2011/02/19/microsoft-agile-guidance-visual-studio-2010</loc>
-      <lastmod>2011-02-19T19:01:00+00:00</lastmod>
     </url>
     
   
@@ -204,14 +156,6 @@
     
     
     <url>
-      <loc>https://qawarrior.github.io/2010/04/16/customer-developer-tester---ian-cooper---codebetter.com---stuff-you-need-to-code-better</loc>
-      <lastmod>2010-04-16T06:24:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>https://qawarrior.github.io/2010/01/10/remote-registry-powershell-module---shay-levy</loc>
       <lastmod>2010-01-10T13:10:00+00:00</lastmod>
     </url>
@@ -252,25 +196,8 @@
     
     
     <url>
-      <loc>https://qawarrior.github.io/2009/12/23/the-lifehacker-guide-to-64-bit-vs.-32-bit-operating-systems-windows</loc>
-      <lastmod>2009-12-23T11:47:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>https://qawarrior.github.io/2009/12/22/blog-to-support-my-rants</loc>
       <lastmod>2009-12-22T22:14:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/tags/alm/</loc>
-      <lastmod>2011-02-19T19:01:00+00:00</lastmod>
-      <priority>0</priority>
     </url>
     
   
@@ -323,16 +250,7 @@
     
     <url>
       <loc>https://qawarrior.github.io/tags/modules/</loc>
-      <lastmod>2017-04-28T13:16:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/tags/objects/</loc>
-      <lastmod>2014-06-11T14:37:00+00:00</lastmod>
+      <lastmod>2011-03-29T10:56:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -350,7 +268,7 @@
     
     <url>
       <loc>https://qawarrior.github.io/tags/powershell/</loc>
-      <lastmod>2017-04-28T13:16:00+00:00</lastmod>
+      <lastmod>2017-03-30T09:28:05-07:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -359,7 +277,7 @@
     
     <url>
       <loc>https://qawarrior.github.io/tags/projects/</loc>
-      <lastmod>2017-04-28T13:16:00+00:00</lastmod>
+      <lastmod>2014-05-29T08:52:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -404,15 +322,6 @@
     
     <url>
       <loc>https://qawarrior.github.io/tags/</loc>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/tags/vs/</loc>
-      <lastmod>2011-02-19T19:01:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
