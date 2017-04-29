@@ -157,8 +157,7 @@
     <h2><a href="https://qawarrior.github.io/2011/01/04/solved-powershell-fails-as-a-functional-language-if-commands-are-in-modules.">Solved: Powershell fails as a functional language if commands are in modules.</a></h2>
     <div class="article-style">
       
-      &#160;
-the issue comes down to the scope that the scriptblock being passed into the function gets bound. In the original example the scriptblock was being bound to the callers scope which can not access anything in the module except what was imported into the scope. The fix turns out to be explicitly binding the scriptblock to the modules scope. See the fixed example below. Thanks go out to @Oisin for the fix.
+      The issue comes down to the scope that the scriptblock being passed into the function gets bound. In the original example the scriptblock was being bound to the callers scope which can not access anything in the module except what was imported into the scope. The fix turns out to be explicitly binding the scriptblock to the modules scope. See the fixed example below. Thanks go out to @Oisin for the fix.
       
     </div>
   </div>

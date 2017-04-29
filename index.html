@@ -592,7 +592,7 @@ Go Tool Commands Ran from the root of the main package.  Build package and all s
 
   <div class="article-style" itemprop="articleBody">
     
-    I have a Testing framework built around Powershell and .net. In the framework there are a couple of main objects that their property values are assigned to Globals that are well know and used. The problem was I did not want to make them read only as this causes issues if reloading the framework and or trying to change paths. I needed a way to report back the value of a variable if it changes so i could keep the objects in sync.
+    I have a Testing framework built around Powershell and .net. In the framework there are a couple of main objects that their property values are assigned to Globals that are well known and used. The problem was I did not want to make them read only as this causes issues if reloading the framework and or trying to change paths. I needed a way to report back the value of a variable if it changes so i could keep the objects in sync.
     
   </div>
   <p class="read-more">
@@ -647,8 +647,7 @@ Go Tool Commands Ran from the root of the main package.  Build package and all s
 
   <div class="article-style" itemprop="articleBody">
     
-    &#160;
-the issue comes down to the scope that the scriptblock being passed into the function gets bound. In the original example the scriptblock was being bound to the callers scope which can not access anything in the module except what was imported into the scope. The fix turns out to be explicitly binding the scriptblock to the modules scope. See the fixed example below. Thanks go out to @Oisin for the fix.
+    The issue comes down to the scope that the scriptblock being passed into the function gets bound. In the original example the scriptblock was being bound to the callers scope which can not access anything in the module except what was imported into the scope. The fix turns out to be explicitly binding the scriptblock to the modules scope. See the fixed example below. Thanks go out to @Oisin for the fix.
     
   </div>
   <p class="read-more">

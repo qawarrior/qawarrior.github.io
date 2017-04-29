@@ -296,7 +296,7 @@ Go Tool Commands Ran from the root of the main package.  Build package and all s
 
     <div class="article-style"><p>
       
-      I have a Testing framework built around Powershell and .net. In the framework there are a couple of main objects that their property values are assigned to Globals that are well know and used. The problem was I did not want to make them read only as this causes issues if reloading the framework and or trying to change paths. I needed a way to report back the value of a variable if it changes so i could keep the objects in sync.
+      I have a Testing framework built around Powershell and .net. In the framework there are a couple of main objects that their property values are assigned to Globals that are well known and used. The problem was I did not want to make them read only as this causes issues if reloading the framework and or trying to change paths. I needed a way to report back the value of a variable if it changes so i could keep the objects in sync.
       
     </p></div>
   </div>
@@ -338,8 +338,7 @@ Go Tool Commands Ran from the root of the main package.  Build package and all s
 
     <div class="article-style"><p>
       
-      &#160;
-the issue comes down to the scope that the scriptblock being passed into the function gets bound. In the original example the scriptblock was being bound to the callers scope which can not access anything in the module except what was imported into the scope. The fix turns out to be explicitly binding the scriptblock to the modules scope. See the fixed example below. Thanks go out to @Oisin for the fix.
+      The issue comes down to the scope that the scriptblock being passed into the function gets bound. In the original example the scriptblock was being bound to the callers scope which can not access anything in the module except what was imported into the scope. The fix turns out to be explicitly binding the scriptblock to the modules scope. See the fixed example below. Thanks go out to @Oisin for the fix.
       
     </p></div>
   </div>
@@ -438,7 +437,7 @@ the issue comes down to the scope that the scriptblock being passed into the fun
 
     <div class="article-style"><p>
       
-      <pre><span style="color: #5f9ea0"><font color="#000000">This one liner will return the the module info in a easy to consume format. The info includes the full path to the module that the function is defined in. Good Time and Get-Command!!!</font></span></pre><br /><br /><pre><span style="color: #5f9ea0">Get-Command</span><span style="color: #000000"> </span><span style="color: #5f9ea0">-CommandType</span><span style="color: #000000"> </span><span style="color: #0000ff">Function</span><span style="color: #000000"> </span><span style="color: #5f9ea0">-Name</span><span style="color: #000000"> </span><span style="color: #5f9ea0">Control-FPService</span><span style="color: #000000"> </span><span style="color: #0000ff">|</span><span style="color: #000000"> </span><span style="color: #5f9ea0">Select-Object</span><span style="color: #000000"> </span><span style="color: #5f9ea0">-ExpandProperty</span><span style="color: #000000"> </span><span style="color: #0000ff">Module</span><span style="color: #000000"> </span><span style="color: #0000ff">|</span><span style="color: #000000"> </span><span style="color: #5f9ea0">Format-List</span></pre>  
+      <pre><span style="color: #5f9ea0"><font color="#000000">This one liner will return the the module info in a easy to consume format. The info includes the full path to the module that the function is defined in. Good Times and Get-Command!!!</font></span></pre><br /><br /><pre><span style="color: #5f9ea0">Get-Command</span><span style="color: #000000"> </span><span style="color: #5f9ea0">-CommandType</span><span style="color: #000000"> </span><span style="color: #0000ff">Function</span><span style="color: #000000"> </span><span style="color: #5f9ea0">-Name</span><span style="color: #000000"> </span><span style="color: #5f9ea0">Control-FPService</span><span style="color: #000000"> </span><span style="color: #0000ff">|</span><span style="color: #000000"> </span><span style="color: #5f9ea0">Select-Object</span><span style="color: #000000"> </span><span style="color: #5f9ea0">-ExpandProperty</span><span style="color: #000000"> </span><span style="color: #0000ff">Module</span><span style="color: #000000"> </span><span style="color: #0000ff">|</span><span style="color: #000000"> </span><span style="color: #5f9ea0">Format-List</span></pre>  
 
       
     </p></div>
