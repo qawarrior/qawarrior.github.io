@@ -182,36 +182,6 @@ Go Tool Commands Ran from the root of the main package.  Build package and all s
   
   <div>
     
-    <h2><a href="https://qawarrior.github.io/2014/07/17/the-winner-is-...-wait-object">The Winner is ... Wait-Object</a></h2>
-    
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2014-07-17 10:06:00 &#43;0000 UTC" itemprop="datePublished">
-      Thu, Jul 17, 2014
-    </time>
-  </span>
-
-  
-
-  
-
-  
-
-</div>
-
-    <div class="article-style"><p>
-      
-      I decided I like the for where is the object i was waiting for was returned, I would pass the InputObject on down the pipeline but if not Write-Error and return null. This allows me to 1. let the command run and do a null check on the return value to decide if the script should continue
-Example 1.
-$returned = $false | Wait-Object -ScriptBlock {Test-Path C:\Wait\For\Removal } -TimeOut 10
-      
-    </p></div>
-  </div>
-  
-  <div>
-    
     <h2><a href="https://qawarrior.github.io/2014/07/14/wait-object-function-takes-place-of-wait-valuereturned">Wait-Object Function Takes Place of Wait-ValueReturned</a></h2>
     
 
@@ -234,63 +204,6 @@ $returned = $false | Wait-Object -ScriptBlock {Test-Path C:\Wait\For\Removal } -
     <div class="article-style"><p>
       
       I previously posted a function Wait-ValueReturned but is did not seem like it flowed with the rest of PowerShell so I re factored the code into Wait-Object but I am not sure about how the command should return. I have considered first return bool from the command to indicate success, which means the command will always return true or false. My other option is to return to object that was being waited on if success and return error record on fail.
-      
-    </p></div>
-  </div>
-  
-  <div>
-    
-    <h2><a href="https://qawarrior.github.io/2014/06/23/new-utility-function-wait-valuereturned">New Utility Function Wait-ValueReturned</a></h2>
-    
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2014-06-23 08:02:00 &#43;0000 UTC" itemprop="datePublished">
-      Mon, Jun 23, 2014
-    </time>
-  </span>
-
-  
-
-  
-
-  
-
-</div>
-
-    <div class="article-style"><p>
-      
-      I Just need a way to block a scripts execution while I wait on some command to return the correct value. So I created this little function to allow me to pass the command or commands and what i expect back and let it handle the work instead of littering my scripts main body with a bunch of loops, if / else, and sleeps, I can use this to encapsulate all that into a clean function.
-      
-    </p></div>
-  </div>
-  
-  <div>
-    
-    <h2><a href="https://qawarrior.github.io/2014/05/29/powershell-talk-at-silicon-valley-code-camp">PowerShell Talk at Silicon Valley Code Camp</a></h2>
-    
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2014-05-29 09:14:00 &#43;0000 UTC" itemprop="datePublished">
-      Thu, May 29, 2014
-    </time>
-  </span>
-
-  
-
-  
-
-  
-
-</div>
-
-    <div class="article-style"><p>
-      
-      <p><a href='http://www.siliconvalley-codecamp.com/Presenter/2014/Session/Paul-Cassidy-697' target='_new'   ><img title='I am speaking at silicon valley code camp. Please come to my session!  Click here for details and register if you are not already.' alt='I am speaking at silicon valley code camp. Please come to my session!  Click here for details.'   src='http://www.siliconvalley-codecamp.com/images/speaker01.jpg?w=250' /></a></p>
-
       
     </p></div>
   </div>
@@ -348,137 +261,6 @@ $returned = $false | Wait-Object -ScriptBlock {Test-Path C:\Wait\For\Removal } -
   
   <div>
     
-    <h2><a href="https://qawarrior.github.io/2011/03/29/new-project-poshlogger">New Project: PoshLogger</a></h2>
-    
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2011-03-29 10:56:00 &#43;0000 UTC" itemprop="datePublished">
-      Tue, Mar 29, 2011
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/powershell">Powershell</a
-    >, 
-    
-    <a href="/tags/projects">Projects</a
-    >, 
-    
-    <a href="/tags/modules">Modules</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-    <div class="article-style"><p>
-      
-      &#160;
-New on Codeplex @ <a href="http://poshlogger.codeplex" target="_blank">http://poshlogger.codeplex</a> my project to create a good, easy, unified logger for powerShell scripts, and PowerShell applications. I started with a script that Joel Bennet posted on poshcode.org and next thing you know I had a simple logger that I have been using in my internal projects on a day to day basis. If your looking for a logger jump in and help create a really great Logging Experience in PowerShell.
-      
-    </p></div>
-  </div>
-  
-  <div>
-    
-    <h2><a href="https://qawarrior.github.io/2011/03/29/silicon-valley-code-camp-2011-powershell-types-and-objects">Silicon Valley Code Camp 2011: PowerShell Types and Objects</a></h2>
-    
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2011-03-29 09:38:00 &#43;0000 UTC" itemprop="datePublished">
-      Tue, Mar 29, 2011
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/code-camp">Code Camp</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-    <div class="article-style"><p>
-      
-      I will be speaking once again at SCCC on Powershell. here is the actual Session overview.
-&#160;
-PowerShell Types and Objects, Objects and Types. Oh My! Level: Intermediate&#160;&#160; |&#160;&#160; Room: Unknown
-A look at the PowerShell Type System (ETS). PowerShell exposes a few primative Types for use but has a powerful dynamic engine called the Extensible Type System. We will discuss Primatives, Type Accelerators, PSObjects, .NET Types, WMI, ASDI, and the difference between a dynamic type and dynamic objects
-      
-    </p></div>
-  </div>
-  
-  <div>
-    
-    <h2><a href="https://qawarrior.github.io/2011/03/14/powershell-plus-v4.0-released-oh-yeah">PowerShell Plus v4.0 Released! Oh Yeah!</a></h2>
-    
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2011-03-14 09:08:00 &#43;0000 UTC" itemprop="datePublished">
-      Mon, Mar 14, 2011
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/release">Release</a
-    >, 
-    
-    <a href="/tags/powershell">Powershell</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-    <div class="article-style"><p>
-      
-      <p><h3>&#160;</h3>  <p>Advanced PowerShell development environment</p>  <p><img alt="" src="https://www.idera.com/images/Products/ProdBox/HeroShot_PowershellPlus.gif" />    <br />Learn PowerShell fast, code PowerShell faster</p>  <ul>   <li>Learn PowerShell fast using the Interactive Learning Center </li>    <li>Execute PowerShell quickly and accurately with the powerful interactive console </li>    <li>Take advantage of the PowerShell remoting features directly from the interactive console </li>    <li>Access hundreds of pre-loaded scripts in the personal QuickClick™ library </li>    <li>Download thousands of community scripts from PowerShell.com, TechNet and PoshCode – directly from the PowerShell Plus console and editor </li>    <li>Debug PowerShell 10x faster with the advanced script editor and easily share your scripts with the PowerShell community Code</li> </ul></p>
-
-      
-    </p></div>
-  </div>
-  
-  <div>
-    
     <h2><a href="https://qawarrior.github.io/2011/02/15/watching-ps-vars-for-changes---events">Watching PS Vars for changes - Events</a></h2>
     
 
@@ -519,17 +301,185 @@ A look at the PowerShell Type System (ETS). PowerShell exposes a few primative T
     </p></div>
   </div>
   
+  <div>
+    
+    <h2><a href="https://qawarrior.github.io/2011/01/04/solved-powershell-fails-as-a-functional-language-if-commands-are-in-modules.">Solved: Powershell fails as a functional language if commands are in modules.</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2011-01-04 14:13:00 &#43;0000 UTC" itemprop="datePublished">
+      Tue, Jan 4, 2011
+    </time>
+  </span>
 
   
-<nav>
-  <ul class="pager">
-    
-    
-    <li><a href="https://qawarrior.github.io/post/page/2/">Next &raquo;</a></li>
-    
-  </ul>
-</nav>
 
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/powershell">Powershell</a
+    >, 
+    
+    <a href="/tags/functional">Functional</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      &#160;
+the issue comes down to the scope that the scriptblock being passed into the function gets bound. In the original example the scriptblock was being bound to the callers scope which can not access anything in the module except what was imported into the scope. The fix turns out to be explicitly binding the scriptblock to the modules scope. See the fixed example below. Thanks go out to @Oisin for the fix.
+      
+    </p></div>
+  </div>
+  
+  <div>
+    
+    <h2><a href="https://qawarrior.github.io/2011/01/04/powershell-fails-as-a-functional-language-if-commands-are-in-modules.">Powershell fails as a functional language if commands are in modules.</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2011-01-04 09:57:00 &#43;0000 UTC" itemprop="datePublished">
+      Tue, Jan 4, 2011
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/powershell">Powershell</a
+    >, 
+    
+    <a href="/tags/functional">Functional</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      I have some functions that contain functions. When I put the Functions in a .ps1 file and Dot Source directly the behave great but if those functions get imported in a module they fail to find the inner function with a CommandNotFound error. It does not matter if the functions are directly in a .psm1 file or if they are dot sourced by the .psm1 file they still fail to find the inner functions.
+      
+    </p></div>
+  </div>
+  
+  <div>
+    
+    <h2><a href="https://qawarrior.github.io/2010/09/10/save-html-as-docx">Save HTML as DOCX</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2010-09-10 16:17:00 &#43;0000 UTC" itemprop="datePublished">
+      Fri, Sep 10, 2010
+    </time>
+  </span>
+
+  
+
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      the other day we had a need to save an HTML file as DOCX. We are creating the HTML file using ConvertT0-HTML. The file contains data that needs to be saved in SharePoint and needs to be editable by others. We decided to save as a DOCX because those in management all have WORD installed but don&rsquo;t have a&#160; Dedicated HTML editor. So here is the Code Enjoy.
+!!! YOU MUST HAVE WORD 2007 or 2010 INSTALLED !
+      
+    </p></div>
+  </div>
+  
+  <div>
+    
+    <h2><a href="https://qawarrior.github.io/2010/01/03/get-module-info-for-a-function-in-powershell-v2.0">Get module Info for a Function in Powershell v2.0</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2010-01-03 07:34:00 &#43;0000 UTC" itemprop="datePublished">
+      Sun, Jan 3, 2010
+    </time>
+  </span>
+
+  
+
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      <pre><span style="color: #5f9ea0"><font color="#000000">This one liner will return the the module info in a easy to consume format. The info includes the full path to the module that the function is defined in. Good Time and Get-Command!!!</font></span></pre><br /><br /><pre><span style="color: #5f9ea0">Get-Command</span><span style="color: #000000"> </span><span style="color: #5f9ea0">-CommandType</span><span style="color: #000000"> </span><span style="color: #0000ff">Function</span><span style="color: #000000"> </span><span style="color: #5f9ea0">-Name</span><span style="color: #000000"> </span><span style="color: #5f9ea0">Control-FPService</span><span style="color: #000000"> </span><span style="color: #0000ff">|</span><span style="color: #000000"> </span><span style="color: #5f9ea0">Select-Object</span><span style="color: #000000"> </span><span style="color: #5f9ea0">-ExpandProperty</span><span style="color: #000000"> </span><span style="color: #0000ff">Module</span><span style="color: #000000"> </span><span style="color: #0000ff">|</span><span style="color: #000000"> </span><span style="color: #5f9ea0">Format-List</span></pre>  
+
+      
+    </p></div>
+  </div>
+  
+  <div>
+    
+    <h2><a href="https://qawarrior.github.io/2009/12/23/testing-for-powershell-remoting-test-psremoting">Testing for PowerShell Remoting: Test-PsRemoting</a></h2>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2009-12-23 11:51:00 &#43;0000 UTC" itemprop="datePublished">
+      Wed, Dec 23, 2009
+    </time>
+  </span>
+
+  
+
+  
+
+  
+
+</div>
+
+    <div class="article-style"><p>
+      
+      Testing for PowerShell Remoting: Test-PsRemoting: &ldquo;
+When you’re writing a script that depends on PowerShell Remoting, it’s often helpful
+to know that the remoting channel is open and will support the activities of your
+script.
+PowerShell has a Test-WSMan command, but that only verifies that a WSMan connection
+is possible. There are other scenarios you could be impacted by:
+Not having permission on the remote machineMisconfiguration of the PowerShell endpointCorrupted installation(etc)
+      
+    </p></div>
+  </div>
+  
+
+  
 
 
 </div>

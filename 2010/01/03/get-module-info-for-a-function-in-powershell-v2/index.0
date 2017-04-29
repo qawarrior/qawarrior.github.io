@@ -221,12 +221,12 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="https://qawarrior.github.io/2009/12/23/microsoft-release-the-powershell-v2-sdk"><span
-      aria-hidden="true">&larr;</span> Microsoft Release the PowerShell V2 SDK</a></li>
+    <li class="previous"><a href="https://qawarrior.github.io/2009/12/23/testing-for-powershell-remoting-test-psremoting"><span
+      aria-hidden="true">&larr;</span> Testing for PowerShell Remoting: Test-PsRemoting</a></li>
     
 
     
-    <li class="next"><a href="https://qawarrior.github.io/2010/01/03/a-couple-annoyances-in-powershell-v2.0">A Couple Annoyances in Powershell V2.0 <span
+    <li class="next"><a href="https://qawarrior.github.io/2010/09/10/save-html-as-docx">Save HTML as DOCX <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>

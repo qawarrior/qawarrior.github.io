@@ -451,49 +451,6 @@ Go Tool Commands Ran from the root of the main package.  Build package and all s
   
   
   <h3 class="article-title" itemprop="name">
-    <a href="https://qawarrior.github.io/2014/07/17/the-winner-is-...-wait-object" itemprop="url">The Winner is ... Wait-Object</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2014-07-17 10:06:00 &#43;0000 UTC" itemprop="datePublished">
-      Thu, Jul 17, 2014
-    </time>
-  </span>
-
-  
-
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    I decided I like the for where is the object i was waiting for was returned, I would pass the InputObject on down the pipeline but if not Write-Error and return null. This allows me to 1. let the command run and do a null check on the return value to decide if the script should continue
-Example 1.
-$returned = $false | Wait-Object -ScriptBlock {Test-Path C:\Wait\For\Removal } -TimeOut 10
-    
-  </div>
-  <p class="read-more">
-    <a href="https://qawarrior.github.io/2014/07/17/the-winner-is-...-wait-object" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
     <a href="https://qawarrior.github.io/2014/07/14/wait-object-function-takes-place-of-wait-valuereturned" itemprop="url">Wait-Object Function Takes Place of Wait-ValueReturned</a>
   </h3>
   
@@ -535,20 +492,43 @@ $returned = $false | Wait-Object -ScriptBlock {Test-Path C:\Wait\For\Removal } -
   
   
   <h3 class="article-title" itemprop="name">
-    <a href="https://qawarrior.github.io/2014/06/23/new-utility-function-wait-valuereturned" itemprop="url">New Utility Function Wait-ValueReturned</a>
+    <a href="https://qawarrior.github.io/2014/05/29/credential-io-script" itemprop="url">Credential IO Script</a>
   </h3>
   
 
 <div class="article-metadata">
 
   <span class="article-date">
-    <time datetime="2014-06-23 08:02:00 &#43;0000 UTC" itemprop="datePublished">
-      Mon, Jun 23, 2014
+    <time datetime="2014-05-29 08:52:00 &#43;0000 UTC" itemprop="datePublished">
+      Thu, May 29, 2014
     </time>
   </span>
 
   
 
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/functions">Functions</a
+    >, 
+    
+    <a href="/tags/powershell">Powershell</a
+    >, 
+    
+    <a href="/tags/projects">Projects</a
+    >, 
+    
+    <a href="/tags/scripts">Scripts</a
+    >, 
+    
+    <a href="/tags/cmdlets">Cmdlets</a
+    >
+    
+  </span>
+  
   
 
   
@@ -557,11 +537,11 @@ $returned = $false | Wait-Object -ScriptBlock {Test-Path C:\Wait\For\Removal } -
 
   <div class="article-style" itemprop="articleBody">
     
-    I Just need a way to block a scripts execution while I wait on some command to return the correct value. So I created this little function to allow me to pass the command or commands and what i expect back and let it handle the work instead of littering my scripts main body with a bunch of loops, if / else, and sleeps, I can use this to encapsulate all that into a clean function.
+    This is an updated version of the Import and Export Credential functions that store the creds in a json format versus the clixml format used by the original created by the guys @ powertips &amp; powershell.com. I also store them in a known location and I use a string for a look up key to store and retrieve them. This allows me to use EFS to further secure the files on the drive.
     
   </div>
   <p class="read-more">
-    <a href="https://qawarrior.github.io/2014/06/23/new-utility-function-wait-valuereturned" class="btn btn-primary btn-outline">
+    <a href="https://qawarrior.github.io/2014/05/29/credential-io-script" class="btn btn-primary btn-outline">
       CONTINUE READING
     </a>
   </p>
@@ -576,20 +556,34 @@ $returned = $false | Wait-Object -ScriptBlock {Test-Path C:\Wait\For\Removal } -
   
   
   <h3 class="article-title" itemprop="name">
-    <a href="https://qawarrior.github.io/2014/05/29/powershell-talk-at-silicon-valley-code-camp" itemprop="url">PowerShell Talk at Silicon Valley Code Camp</a>
+    <a href="https://qawarrior.github.io/2011/02/15/watching-ps-vars-for-changes---events" itemprop="url">Watching PS Vars for changes - Events</a>
   </h3>
   
 
 <div class="article-metadata">
 
   <span class="article-date">
-    <time datetime="2014-05-29 09:14:00 &#43;0000 UTC" itemprop="datePublished">
-      Thu, May 29, 2014
+    <time datetime="2011-02-15 13:47:00 &#43;0000 UTC" itemprop="datePublished">
+      Tue, Feb 15, 2011
     </time>
   </span>
 
   
 
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/eventing">Eventing</a
+    >, 
+    
+    <a href="/tags/powershell">Powershell</a
+    >
+    
+  </span>
+  
   
 
   
@@ -598,12 +592,67 @@ $returned = $false | Wait-Object -ScriptBlock {Test-Path C:\Wait\For\Removal } -
 
   <div class="article-style" itemprop="articleBody">
     
-    <p><a href='http://www.siliconvalley-codecamp.com/Presenter/2014/Session/Paul-Cassidy-697' target='_new'   ><img title='I am speaking at silicon valley code camp. Please come to my session!  Click here for details and register if you are not already.' alt='I am speaking at silicon valley code camp. Please come to my session!  Click here for details.'   src='http://www.siliconvalley-codecamp.com/images/speaker01.jpg?w=250' /></a></p>
-
+    I have a Testing framework built around Powershell and .net. In the framework there are a couple of main objects that their property values are assigned to Globals that are well know and used. The problem was I did not want to make them read only as this causes issues if reloading the framework and or trying to change paths. I needed a way to report back the value of a variable if it changes so i could keep the objects in sync.
     
   </div>
   <p class="read-more">
-    <a href="https://qawarrior.github.io/2014/05/29/powershell-talk-at-silicon-valley-code-camp" class="btn btn-primary btn-outline">
+    <a href="https://qawarrior.github.io/2011/02/15/watching-ps-vars-for-changes---events" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="https://qawarrior.github.io/2011/01/04/solved-powershell-fails-as-a-functional-language-if-commands-are-in-modules." itemprop="url">Solved: Powershell fails as a functional language if commands are in modules.</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2011-01-04 14:13:00 &#43;0000 UTC" itemprop="datePublished">
+      Tue, Jan 4, 2011
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/powershell">Powershell</a
+    >, 
+    
+    <a href="/tags/functional">Functional</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    &#160;
+the issue comes down to the scope that the scriptblock being passed into the function gets bound. In the original example the scriptblock was being bound to the callers scope which can not access anything in the module except what was imported into the scope. The fix turns out to be explicitly binding the scriptblock to the modules scope. See the fixed example below. Thanks go out to @Oisin for the fix.
+    
+  </div>
+  <p class="read-more">
+    <a href="https://qawarrior.github.io/2011/01/04/solved-powershell-fails-as-a-functional-language-if-commands-are-in-modules." class="btn btn-primary btn-outline">
       CONTINUE READING
     </a>
   </p>

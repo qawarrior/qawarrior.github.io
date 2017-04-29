@@ -44,32 +44,8 @@
     
     
     <url>
-      <loc>https://qawarrior.github.io/2014/07/17/the-winner-is-...-wait-object</loc>
-      <lastmod>2014-07-17T10:06:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>https://qawarrior.github.io/2014/07/14/wait-object-function-takes-place-of-wait-valuereturned</loc>
       <lastmod>2014-07-14T10:42:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2014/06/23/new-utility-function-wait-valuereturned</loc>
-      <lastmod>2014-06-23T08:02:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2014/05/29/powershell-talk-at-silicon-valley-code-camp</loc>
-      <lastmod>2014-05-29T09:14:00+00:00</lastmod>
     </url>
     
   
@@ -84,40 +60,8 @@
     
     
     <url>
-      <loc>https://qawarrior.github.io/2011/03/29/new-project-poshlogger</loc>
-      <lastmod>2011-03-29T10:56:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2011/03/29/silicon-valley-code-camp-2011-powershell-types-and-objects</loc>
-      <lastmod>2011-03-29T09:38:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2011/03/14/powershell-plus-v4.0-released-oh-yeah</loc>
-      <lastmod>2011-03-14T09:08:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>https://qawarrior.github.io/2011/02/15/watching-ps-vars-for-changes---events</loc>
       <lastmod>2011-02-15T13:47:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2011/01/27/powershell-plus-4.0-beta</loc>
-      <lastmod>2011-01-27T07:10:00+00:00</lastmod>
     </url>
     
   
@@ -148,40 +92,8 @@
     
     
     <url>
-      <loc>https://qawarrior.github.io/2010/05/17/5th-silicon-valley-code-camp-oct-9th-and-10th-2010</loc>
-      <lastmod>2010-05-17T10:16:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2010/01/10/remote-registry-powershell-module---shay-levy</loc>
-      <lastmod>2010-01-10T13:10:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2010/01/03/a-couple-annoyances-in-powershell-v2.0</loc>
-      <lastmod>2010-01-03T07:44:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>https://qawarrior.github.io/2010/01/03/get-module-info-for-a-function-in-powershell-v2.0</loc>
       <lastmod>2010-01-03T07:34:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/2009/12/23/microsoft-release-the-powershell-v2-sdk</loc>
-      <lastmod>2009-12-23T12:11:00+00:00</lastmod>
     </url>
     
   
@@ -196,25 +108,8 @@
     
     
     <url>
-      <loc>https://qawarrior.github.io/2009/12/22/blog-to-support-my-rants</loc>
-      <lastmod>2009-12-22T22:14:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>https://qawarrior.github.io/tags/cmdlets/</loc>
       <lastmod>2014-05-29T08:52:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/tags/code-camp/</loc>
-      <lastmod>2011-03-29T09:38:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -242,15 +137,6 @@
     <url>
       <loc>https://qawarrior.github.io/tags/functions/</loc>
       <lastmod>2014-05-29T08:52:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/tags/modules/</loc>
-      <lastmod>2011-03-29T10:56:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -294,26 +180,8 @@
     
     
     <url>
-      <loc>https://qawarrior.github.io/tags/release/</loc>
-      <lastmod>2011-03-14T09:08:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
       <loc>https://qawarrior.github.io/tags/scripts/</loc>
       <lastmod>2014-05-29T08:52:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-      <loc>https://qawarrior.github.io/tags/silicon-valley-code-camp/</loc>
-      <lastmod>2010-05-17T10:16:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
