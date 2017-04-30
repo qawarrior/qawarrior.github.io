@@ -11,6 +11,79 @@
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Wait-Object Powershell Function</title>
+      <link>https://qawarrior.github.io/2017/04/29/wait-object-powershell-function</link>
+      <pubDate>Sat, 29 Apr 2017 09:11:27 -0700</pubDate>
+      
+      <guid>https://qawarrior.github.io/2017/04/29/wait-object-powershell-function</guid>
+      <description>&lt;pre&gt;&lt;code class=&#34;language-powershell&#34;&gt;#Requires -Version 3.0
+
+&amp;lt;#
+.SYNOPSIS
+  Pauses execution until scriptblock returns expected object.
+.DESCRIPTION
+  The command will wait for a specific object to be returned from a scriptblock.
+  If the object is returned the command will return the object and the script will continue
+  execution but if the object is not returned before the timeout then an error record is returned
+  and continuation of the script depends on ErrorAction Preference
+.PARAMETER InputObject
+  The Object that is expected to be returned from the scriptblock.
+.PARAMETER ScriptBlock
+  The scriptblock that is expected to return the object being waited on.
+  The scriptblock will be invoked with one second sleeps in between invocations.
+.PARAMETER TimeOut
+  The number of Seconds to wait for the object to be returned.
+  The command will return an error record once the Timeout value is exceeded
+.EXAMPLE
+  $true | Wait-Object {Test-Path C:\users\foo\file.txt} -Timeout 120
+  this will wait up to 120 seconds for the test for the path to return true 
+.EXAMPLE
+  50 | Wait-Object {Get-Random -Min 0 -Max 99} -Timeout 90
+  this example will keep invoking the scriptblock until 50 is returned or it will timeout in 90 seconds
+.NOTES
+  this is option 2
+.FUNCTIONALITY
+  a utility to help control the data flow through a script
+#&amp;gt;
+function Wait-Object {
+  [CmdletBinding()]
+  Param (
+    [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+    [ValidateNotNull()]
+    [Object]
+    $InputObject,
+    [Parameter(Mandatory=$true)]
+    [ValidateNotNull()]
+    [ScriptBlock]
+    $ScriptBlock,
+    [ValidateRange(0,600)]
+    [int]
+    $TimeOut=120
+  )
+  
+  PROCESS {
+    $StartTime = [DateTime]::Now
+    $EndTime = $StartTime.AddSeconds($TimeOut)
+    Write-Verbose &#39;Waiting for the ScriptBlock to return expected object&#39;
+    while( $( &amp;amp; $ScriptBlock ) -ne $InputObject ) {
+      Write-Verbose &#39;The scriptblock did not return the expected object&#39;
+      if([DateTime]::Now -gt $EndTime) {
+        Write-Error &amp;quot;The command started at $StartTime has timed out after $TimeOut seconds&amp;quot;
+        return $null
+      }
+      else {
+        Start-Sleep -Seconds 1
+      }
+    }
+    Write-Verbose &#39;The ScriptBlock has returned the expected object&#39;
+    return $InputObject
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Cmdline Reference Guide</title>
       <link>https://qawarrior.github.io/2017/04/17/cmdline-reference-guide</link>
       <pubDate>Mon, 17 Apr 2017 10:52:54 -0700</pubDate>
@@ -25,7 +98,8 @@
 &lt;p&gt;Ran from the root of the main package. &lt;br&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Build package and all sub-packages - &lt;code&gt;go build -v ./...&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Build package and all sub-packages:&lt;br&gt;
+&lt;code&gt;go build -v ./...&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&#34;git-commands&#34;&gt;Git Commands&lt;/h3&gt;
@@ -33,9 +107,14 @@
 &lt;p&gt;Ran from root of git repository. &lt;br&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Stage all files for commit - &lt;code&gt;git add --all&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Commit to local repository - &lt;code&gt;git commit -m &amp;quot;message for commit&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Push to remote repository - &lt;code&gt;git push origin master&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Stage all files for commit:&lt;br&gt;
+&lt;code&gt;git add --all&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Commit to local repository:&lt;br&gt;
+&lt;code&gt;git commit -m &amp;quot;message for commit&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Push to remote repository:&lt;br&gt;
+&lt;code&gt;git push origin master&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Pull from remote repository:&lt;br&gt;
+&lt;code&gt;git pull origin master&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&#34;hugo-site-commands&#34;&gt;Hugo Site Commands&lt;/h3&gt;
@@ -43,9 +122,12 @@
 &lt;p&gt;Ran from root of hugo site. &lt;br&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Create a new hugo site template - &lt;code&gt;hugo new site &amp;quot;site name&amp;quot;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Run Hugo development server - &lt;code&gt;hugo server --watch&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Generate static site (defaults to ./public) - &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create a new hugo site template:&lt;br&gt;
+&lt;code&gt;hugo new site &amp;quot;site name&amp;quot;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Run Hugo development server:&lt;br&gt;
+&lt;code&gt;hugo server --watch&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Generate static site (defaults to ./public):&lt;br&gt;
+&lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&#34;mongodb-commands&#34;&gt;MongoDB Commands&lt;/h3&gt;
@@ -53,7 +135,8 @@
 &lt;p&gt;Ran from the database root unless path is specified in command. &lt;br&gt;&lt;/p&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Run the server with path to database - &lt;code&gt;mongod --dbpath .\db&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Run the server with path to database:&lt;br&gt;
+&lt;code&gt;mongod --dbpath .\db&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>

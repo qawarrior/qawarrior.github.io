@@ -7,11 +7,56 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2016 Paul H Cassidy</copyright>
-    <lastBuildDate>Thu, 30 Mar 2017 09:28:05 -0700</lastBuildDate>
+    <lastBuildDate>Sat, 29 Apr 2017 19:48:26 -0700</lastBuildDate>
     <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>PSLogger</title>
+      <title>PSSCRIPTS</title>
+      <link>https://qawarrior.github.io/project/psscripts-github/</link>
+      <pubDate>Sat, 29 Apr 2017 19:48:26 -0700</pubDate>
+      
+      <guid>https://qawarrior.github.io/project/psscripts-github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ModuleScaffolding</title>
+      <link>https://qawarrior.github.io/project/modulescaffolding-github/</link>
+      <pubDate>Sat, 29 Apr 2017 14:07:02 -0700</pubDate>
+      
+      <guid>https://qawarrior.github.io/project/modulescaffolding-github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>trainings</title>
+      <link>https://qawarrior.github.io/project/trainings-github/</link>
+      <pubDate>Sat, 29 Apr 2017 14:02:36 -0700</pubDate>
+      
+      <guid>https://qawarrior.github.io/project/trainings-github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>go-examples</title>
+      <link>https://qawarrior.github.io/project/go-examples-github/</link>
+      <pubDate>Sat, 29 Apr 2017 13:55:29 -0700</pubDate>
+      
+      <guid>https://qawarrior.github.io/project/go-examples-github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Playlister</title>
+      <link>https://qawarrior.github.io/project/playlister-github/</link>
+      <pubDate>Sat, 29 Apr 2017 13:49:14 -0700</pubDate>
+      
+      <guid>https://qawarrior.github.io/project/playlister-github/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PoshLogger</title>
       <link>https://qawarrior.github.io/project/pslogger-github/</link>
       <pubDate>Thu, 30 Mar 2017 09:28:05 -0700</pubDate>
       

@@ -399,6 +399,70 @@
   
   
   <h3 class="article-title" itemprop="name">
+    <a href="https://qawarrior.github.io/2017/04/29/wait-object-powershell-function" itemprop="url">Wait-Object Powershell Function</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2017-04-29 09:11:27 -0700 PDT" itemprop="datePublished">
+      Sat, Apr 29, 2017
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/functions">Functions</a
+    >, 
+    
+    <a href="/tags/powershell">Powershell</a
+    >, 
+    
+    <a href="/tags/projects">Projects</a
+    >, 
+    
+    <a href="/tags/scripts">Scripts</a
+    >, 
+    
+    <a href="/tags/cmdlets">Cmdlets</a
+    >
+    
+  </span>
+  
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    #Requires -Version 3.0 &lt;# .SYNOPSIS Pauses execution until scriptblock returns expected object. .DESCRIPTION The command will wait for a specific object to be returned from a scriptblock. If the object is returned the command will return the object and the script will continue execution but if the object is not returned before the timeout then an error record is returned and continuation of the script depends on ErrorAction Preference .PARAMETER InputObject The Object that is expected to be returned from the scriptblock.
+    
+  </div>
+  <p class="read-more">
+    <a href="https://qawarrior.github.io/2017/04/29/wait-object-powershell-function" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
     <a href="https://qawarrior.github.io/2017/04/17/cmdline-reference-guide" itemprop="url">Cmdline Reference Guide</a>
   </h3>
   
@@ -416,6 +480,17 @@
   
   
   
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/tools">Tools</a
+    >, 
+    
+    <a href="/tags/commands">Commands</a
+    >
+    
+  </span>
+  
   
 
   
@@ -425,7 +500,11 @@
   <div class="article-style" itemprop="articleBody">
     
     Theses commands need to be found in the path environment variable.
-Go Tool Commands Ran from the root of the main package.  Build package and all sub-packages - go build -v ./...  Git Commands Ran from root of git repository.  Stage all files for commit - git add --all Commit to local repository - git commit -m &quot;message for commit&quot; Push to remote repository - git push origin master  Hugo Site Commands Ran from root of hugo site.
+Go Tool Commands Ran from the root of the main package.  Build package and all sub-packages:
+go build -v ./...  Git Commands Ran from root of git repository.  Stage all files for commit:
+git add --all Commit to local repository:
+git commit -m &quot;message for commit&quot; Push to remote repository:
+git push origin master Pull from remote repository:
     
   </div>
   <p class="read-more">
@@ -523,6 +602,29 @@ Go Tool Commands Ran from the root of the main package.  Build package and all s
   
 
   
+  
+  
+  <span class="article-tags">
+    <i class="fa fa-tags"></i>
+    
+    <a href="/tags/functions">Functions</a
+    >, 
+    
+    <a href="/tags/powershell">Powershell</a
+    >, 
+    
+    <a href="/tags/projects">Projects</a
+    >, 
+    
+    <a href="/tags/scripts">Scripts</a
+    >, 
+    
+    <a href="/tags/cmdlets">Cmdlets</a
+    >
+    
+  </span>
+  
+  
 
   
 
@@ -587,11 +689,101 @@ Go Tool Commands Ran from the root of the main package.  Build package and all s
       
       
       
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item Powershell Scripts">
+        <div class="card">
+          
+          <div class="card-text">
+            <h4><a href="https://github.com/qawarrior/PSScripts" target="_blank">PSSCRIPTS</a></h4>
+            <div class="card-desription">
+              <p>A collection of various Powershell script</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item Powershell">
         <div class="card">
           
           <div class="card-text">
-            <h4><a href="http://github.com/qawarrior/pslogger" target="_blank">PSLogger</a></h4>
+            <h4><a href="https://github.com/qawarrior/ModuleScaffolding" target="_blank">ModuleScaffolding</a></h4>
+            <div class="card-desription">
+              <p>Powershell Module to create folder scaffolding for Powershell Modules</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item code training learning">
+        <div class="card">
+          
+          <div class="card-text">
+            <h4><a href="https://github.com/qawarrior/Trainings" target="_blank">trainings</a></h4>
+            <div class="card-desription">
+              <p>A place to store things related to trainings, either mine or others</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item Go golang examples samples">
+        <div class="card">
+          
+          <div class="card-text">
+            <h4><a href="https://github.com/qawarrior/go-examples" target="_blank">go-examples</a></h4>
+            <div class="card-desription">
+              <p>A place to try out and store small bits of golang code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item Go golang rest api web service">
+        <div class="card">
+          
+          <div class="card-text">
+            <h4><a href="https://github.com/qawarrior/playlister" target="_blank">Playlister</a></h4>
+            <div class="card-desription">
+              <p>Web Service API for Music Related Events and Information. written in Googles golang</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-6 project-item isotope-item Powershell">
+        <div class="card">
+          
+          <div class="card-text">
+            <h4><a href="https://github.com/qawarrior/PoshLogger" target="_blank">PoshLogger</a></h4>
             <div class="card-desription">
               <p>Powershell module for logging to different targets</p>
             </div>

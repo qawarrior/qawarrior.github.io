@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Examples on Paul Cassidy Software Developer</title>
+    <link>https://qawarrior.github.io/tags/examples/index.xml</link>
+    <description>Recent content in Examples on Paul Cassidy Software Developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2016 Paul H Cassidy</copyright>
+    <atom:link href="/tags/examples/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>go-examples</title>
+      <link>https://qawarrior.github.io/project/go-examples-github/</link>
+      <pubDate>Sat, 29 Apr 2017 13:55:29 -0700</pubDate>
+      
+      <guid>https://qawarrior.github.io/project/go-examples-github/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
