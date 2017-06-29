@@ -41,6 +41,10 @@
 &lt;code&gt;git push origin master&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Pull from remote repository:&lt;br&gt;
 &lt;code&gt;git pull origin master&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Initalize a new Repo&lt;br&gt;
+&lt;code&gt;git init&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add a Remote to a Local Repo&lt;br&gt;
+&lt;code&gt;git remote add origin https://github.com/username/Reponame.git&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&#34;hugo-site-commands&#34;&gt;Hugo Site Commands&lt;/h3&gt;
