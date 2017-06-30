@@ -169,7 +169,7 @@ function Wait-Object {
 
 &lt;h3 id=&#34;go-tool-commands&#34;&gt;Go Tool Commands&lt;/h3&gt;
 
-&lt;p&gt;Ran from the root of the main package. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Ran from the root of the main package.&lt;br&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Build package and all sub-packages:&lt;br&gt;
@@ -178,7 +178,7 @@ function Wait-Object {
 
 &lt;h3 id=&#34;git-commands&#34;&gt;Git Commands&lt;/h3&gt;
 
-&lt;p&gt;Ran from root of git repository. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Ran from root of git repository.&lt;br&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Stage all files for commit:&lt;br&gt;
@@ -189,15 +189,15 @@ function Wait-Object {
 &lt;code&gt;git push origin master&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;Pull from remote repository:&lt;br&gt;
 &lt;code&gt;git pull origin master&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Initalize a new Repo&lt;br&gt;
+&lt;li&gt;Initalize a new Repo:&lt;br&gt;
 &lt;code&gt;git init&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;Add a Remote to a Local Repo&lt;br&gt;
+&lt;li&gt;Add a Remote to a Local Repo:&lt;br&gt;
 &lt;code&gt;git remote add origin https://github.com/username/Reponame.git&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;h3 id=&#34;hugo-site-commands&#34;&gt;Hugo Site Commands&lt;/h3&gt;
 
-&lt;p&gt;Ran from root of hugo site. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Ran from root of hugo site.&lt;br&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Create a new hugo site template:&lt;br&gt;
@@ -210,7 +210,7 @@ function Wait-Object {
 
 &lt;h3 id=&#34;mongodb-commands&#34;&gt;MongoDB Commands&lt;/h3&gt;
 
-&lt;p&gt;Ran from the database root unless path is specified in command. &lt;br&gt;&lt;/p&gt;
+&lt;p&gt;Ran from the database root unless path is specified in command.&lt;br&gt;&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Run the server with path to database:&lt;br&gt;
