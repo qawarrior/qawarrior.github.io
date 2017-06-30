@@ -11,11 +11,11 @@
     <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Restic Bsckups For The Mere Mortal Part Two</title>
-      <link>https://qawarrior.github.io/2017/06/29/restic-bsckups-for-the-mere-mortal-part-two</link>
+      <title>Restic Backups For The Mere Mortal Part Two</title>
+      <link>https://qawarrior.github.io/2017/06/29/restic-backups-for-the-mere-mortal-part-two</link>
       <pubDate>Thu, 29 Jun 2017 22:38:12 -0700</pubDate>
       
-      <guid>https://qawarrior.github.io/2017/06/29/restic-bsckups-for-the-mere-mortal-part-two</guid>
+      <guid>https://qawarrior.github.io/2017/06/29/restic-backups-for-the-mere-mortal-part-two</guid>
       <description>&lt;p&gt;This is part 2 of our &lt;a href=&#34;http://github.com/restic/restic&#34; target=&#34;_blank&#34;&gt;Restic&lt;/a&gt; overview. Just for review last time we learned that restic is a command line backup tool written in go. We learned how to create a repo to hold our backups (snapshots). We defined environment variables so restic could aitomatical find our repo and the password for that repo. we backed up our documents directory.&lt;/p&gt;
 
 &lt;p&gt;Today in part 2 we are going to learn about managing our backups - from here out we will be refering to them as snapshots as that is what restic calls them. You should create a few more snapshots of differnt directories for this to make more sense. Once you have a few snapshots to manage you can view them like so.&lt;/p&gt;
@@ -84,11 +84,11 @@ Paul H Cassidy&lt;br&gt;&lt;/p&gt;
     </item>
     
     <item>
-      <title>Restic Bsckups For The Mere Mortal Part One</title>
-      <link>https://qawarrior.github.io/2017/06/29/restic-bsckups-for-the-mere-mortal-part-one</link>
+      <title>Restic Backups For The Mere Mortal Part One</title>
+      <link>https://qawarrior.github.io/2017/06/29/restic-backups-for-the-mere-mortal-part-one</link>
       <pubDate>Thu, 29 Jun 2017 10:41:28 -0700</pubDate>
       
-      <guid>https://qawarrior.github.io/2017/06/29/restic-bsckups-for-the-mere-mortal-part-one</guid>
+      <guid>https://qawarrior.github.io/2017/06/29/restic-backups-for-the-mere-mortal-part-one</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://github.com/restic/restic&#34; target=&#34;_blank&#34;&gt;Restic&lt;/a&gt; is a command line backup tool written in Googles go language. This tool totally rocks. You start by defining a backup repository that can be a local file system path, SFTP server, AWS S3, Minio server backed by S3, or various other ways. Restic is open source and has docs on how to expand its capabilities like adding your own backup target perhaps a SQL Database, etc. Lets look at a simple example of creating a local repo for the backups. We asseme that restic is in your path and can be call by name.&lt;/p&gt;
 
 &lt;p&gt;&lt;code&gt;restic init --repo F:\Backups&lt;/code&gt;&lt;/p&gt;

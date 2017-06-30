@@ -34,11 +34,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://qawarrior.github.io/2017/04/29/wait-object-powershell-function">
+  <link rel="canonical" href="https://qawarrior.github.io/2017/06/29/restic-backups-for-the-mere-mortal-part-one">
 
   
 
-  <title>Wait-Object Powershell Function | Paul H Cassidy (qawarrior) Software Developer</title>
+  <title>Restic Backups For The Mere Mortal Part One | Paul H Cassidy (qawarrior) Software Developer</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -148,14 +148,14 @@
   
 
   <div class="article-container">
-    <h1 itemprop="name">Wait-Object Powershell Function</h1>
+    <h1 itemprop="name">Restic Backups For The Mere Mortal Part One</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
-    <time datetime="2017-04-29 09:11:27 -0700 PDT" itemprop="datePublished">
-      Sat, Apr 29, 2017
+    <time datetime="2017-06-29 10:41:28 -0700 PDT" itemprop="datePublished">
+      Thu, Jun 29, 2017
     </time>
   </span>
 
@@ -163,26 +163,6 @@
 
   
   
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/functions">Functions</a
-    >, 
-    
-    <a href="/tags/powershell">Powershell</a
-    >, 
-    
-    <a href="/tags/projects">Projects</a
-    >, 
-    
-    <a href="/tags/scripts">Scripts</a
-    >, 
-    
-    <a href="/tags/cmdlets">Cmdlets</a
-    >
-    
-  </span>
   
   
 
@@ -192,35 +172,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fqawarrior.github.io%2f2017%2f04%2f29%2fwait-object-powershell-function"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fqawarrior.github.io%2f2017%2f06%2f29%2frestic-backups-for-the-mere-mortal-part-one"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Wait-Object%20Powershell%20Function&amp;url=https%3a%2f%2fqawarrior.github.io%2f2017%2f04%2f29%2fwait-object-powershell-function"
+         href="https://twitter.com/intent/tweet?text=Restic%20Backups%20For%20The%20Mere%20Mortal%20Part%20One&amp;url=https%3a%2f%2fqawarrior.github.io%2f2017%2f06%2f29%2frestic-backups-for-the-mere-mortal-part-one"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fqawarrior.github.io%2f2017%2f04%2f29%2fwait-object-powershell-function&amp;title=Wait-Object%20Powershell%20Function"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fqawarrior.github.io%2f2017%2f06%2f29%2frestic-backups-for-the-mere-mortal-part-one&amp;title=Restic%20Backups%20For%20The%20Mere%20Mortal%20Part%20One"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fqawarrior.github.io%2f2017%2f04%2f29%2fwait-object-powershell-function&amp;title=Wait-Object%20Powershell%20Function"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fqawarrior.github.io%2f2017%2f06%2f29%2frestic-backups-for-the-mere-mortal-part-one&amp;title=Restic%20Backups%20For%20The%20Mere%20Mortal%20Part%20One"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Wait-Object%20Powershell%20Function&amp;body=https%3a%2f%2fqawarrior.github.io%2f2017%2f04%2f29%2fwait-object-powershell-function">
+         href="mailto:?subject=Restic%20Backups%20For%20The%20Mere%20Mortal%20Part%20One&amp;body=https%3a%2f%2fqawarrior.github.io%2f2017%2f06%2f29%2frestic-backups-for-the-mere-mortal-part-one">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -233,70 +213,26 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <pre><code class="language-powershell">#Requires -Version 3.0
+      <p><a href="http://github.com/restic/restic" target="_blank">Restic</a> is a command line backup tool written in Googles go language. This tool totally rocks. You start by defining a backup repository that can be a local file system path, SFTP server, AWS S3, Minio server backed by S3, or various other ways. Restic is open source and has docs on how to expand its capabilities like adding your own backup target perhaps a SQL Database, etc. Lets look at a simple example of creating a local repo for the backups. We asseme that restic is in your path and can be call by name.</p>
 
-&lt;#
-.SYNOPSIS
-  Pauses execution until scriptblock returns expected object.
-.DESCRIPTION
-  The command will wait for a specific object to be returned from a scriptblock.
-  If the object is returned the command will return the object and the script will continue
-  execution but if the object is not returned before the timeout then an error record is returned
-  and continuation of the script depends on ErrorAction Preference
-.PARAMETER InputObject
-  The Object that is expected to be returned from the scriptblock.
-.PARAMETER ScriptBlock
-  The scriptblock that is expected to return the object being waited on.
-  The scriptblock will be invoked with one second sleeps in between invocations.
-.PARAMETER TimeOut
-  The number of Seconds to wait for the object to be returned.
-  The command will return an error record once the Timeout value is exceeded
-.EXAMPLE
-  $true | Wait-Object {Test-Path C:\users\foo\file.txt} -Timeout 120
-  this will wait up to 120 seconds for the test for the path to return true 
-.EXAMPLE
-  50 | Wait-Object {Get-Random -Min 0 -Max 99} -Timeout 90
-  this example will keep invoking the scriptblock until 50 is returned or it will timeout in 90 seconds
-.NOTES
-  this is option 2
-.FUNCTIONALITY
-  a utility to help control the data flow through a script
-#&gt;
-function Wait-Object {
-  [CmdletBinding()]
-  Param (
-    [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
-    [ValidateNotNull()]
-    [Object]
-    $InputObject,
-    [Parameter(Mandatory=$true)]
-    [ValidateNotNull()]
-    [ScriptBlock]
-    $ScriptBlock,
-    [ValidateRange(0,600)]
-    [int]
-    $TimeOut=120
-  )
-  
-  PROCESS {
-    $StartTime = [DateTime]::Now
-    $EndTime = $StartTime.AddSeconds($TimeOut)
-    Write-Verbose 'Waiting for the ScriptBlock to return expected object'
-    while( $( &amp; $ScriptBlock ) -ne $InputObject ) {
-      Write-Verbose 'The scriptblock did not return the expected object'
-      if([DateTime]::Now -gt $EndTime) {
-        Write-Error &quot;The command started at $StartTime has timed out after $TimeOut seconds&quot;
-        return $null
-      }
-      else {
-        Start-Sleep -Seconds 1
-      }
-    }
-    Write-Verbose 'The ScriptBlock has returned the expected object'
-    return $InputObject
-  }
-}
-</code></pre>
+<p><code>restic init --repo F:\Backups</code></p>
+
+<p>When you define the repository restic will prompt you for a password and then again to confirm that password. The repo and the data it contains is encrypted and secure. Once the repo is created you have some choices before moving forward you can backup file system paths.</p>
+
+<p><code>restic -r F:\Backups backup C:\users\qawarrior\documents</code></p>
+
+<p>This will prompt you for your passward and then backup the users documents directory. this is fast and nice but not really suited to automated backups. So to make it a little more automation friendly we will define the environment variable &ldquo;RESTIC_PASSWORD&rdquo; and assign it the value of our repo&rsquo;s password. Now the backup command is entered same as before but we are not prompted for our password.</p>
+
+<p>The Command is still a bit verbose as we have to enter the path to our backup repo each time. The command is still quite redundant. So to remove this we will define the &ldquo;RESTIC_REPOSITORY&rdquo; environment variabke with the value of the path to our backup repo. Now the backup command is this.</p>
+
+<p><code>restic backup C:\users\qawarrior\documents</code></p>
+
+<p>Now restic uses our defined repo and password to backup the documents directory. we can call restic now with differing filepaths or a comma seperated list of paths and it just works. this allows us to create scripts (bash, bat, powershell, etc) to perform our backs from differing locations to our repo.</p>
+
+<p>In part 2 I will go over viewing snapshots (restic&rsquo;s name for each backup) and managing snapshots.</p>
+
+<p>Enjoy and Get Command<br>
+Paul H Cassidy (qawarrior)</p>
 
     </div>
   </div>
@@ -307,12 +243,12 @@ function Wait-Object {
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="https://qawarrior.github.io/2017/04/17/cmdline-reference-guide"><span
-      aria-hidden="true">&larr;</span> Cmdline Reference Guide</a></li>
+    <li class="previous"><a href="https://qawarrior.github.io/2017/04/29/wait-object-powershell-function"><span
+      aria-hidden="true">&larr;</span> Wait-Object Powershell Function</a></li>
     
 
     
-    <li class="next"><a href="https://qawarrior.github.io/2017/06/29/restic-backups-for-the-mere-mortal-part-one">Restic Backups For The Mere Mortal Part One <span
+    <li class="next"><a href="https://qawarrior.github.io/2017/06/29/restic-backups-for-the-mere-mortal-part-two">Restic Backups For The Mere Mortal Part Two <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
@@ -327,9 +263,9 @@ function Wait-Object {
     <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'qawarrior';
-    var disqus_identifier = 'https:\/\/qawarrior.github.io\/2017\/04\/29\/wait-object-powershell-function';
-    var disqus_title = 'Wait-Object Powershell Function';
-    var disqus_url = 'https:\/\/qawarrior.github.io\/2017\/04\/29\/wait-object-powershell-function';
+    var disqus_identifier = 'https:\/\/qawarrior.github.io\/2017\/06\/29\/restic-backups-for-the-mere-mortal-part-one';
+    var disqus_title = 'Restic Backups For The Mere Mortal Part One';
+    var disqus_url = 'https:\/\/qawarrior.github.io\/2017\/06\/29\/restic-backups-for-the-mere-mortal-part-one';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
