@@ -383,6 +383,13 @@
     <h1>Recent Posts</h1>
     
     
+    <p class="view-all">
+      <a href="/post/">
+        More Posts
+        <i class="fa fa-angle-double-right"></i>
+      </a>
+    </p>
+    
 
   </div>
   <div class="col-xs-12 col-md-8">
@@ -390,6 +397,51 @@
     
 
     
+      
+        
+        
+
+
+<div class="article-list-item" itemscope itemprop="blogPost">
+  
+  
+  <h3 class="article-title" itemprop="name">
+    <a href="https://qawarrior.github.io/2017/06/29/restic-bsckups-for-the-mere-mortal-part-two" itemprop="url">Restic Bsckups For The Mere Mortal Part Two</a>
+  </h3>
+  
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    <time datetime="2017-06-29 22:38:12 -0700 PDT" itemprop="datePublished">
+      Thu, Jun 29, 2017
+    </time>
+  </span>
+
+  
+
+  
+  
+  
+  
+
+  
+
+</div>
+
+  <div class="article-style" itemprop="articleBody">
+    
+    This is part 2 of our Restic overview. Just for review last time we learned that restic is a command line backup tool written in go. We learned how to create a repo to hold our backups (snapshots). We defined environment variables so restic could aitomatical find our repo and the password for that repo. we backed up our documents directory.
+Today in part 2 we are going to learn about managing our backups - from here out we will be refering to them as snapshots as that is what restic calls them.
+    
+  </div>
+  <p class="read-more">
+    <a href="https://qawarrior.github.io/2017/06/29/restic-bsckups-for-the-mere-mortal-part-two" class="btn btn-primary btn-outline">
+      CONTINUE READING
+    </a>
+  </p>
+</div>
+
       
         
         
@@ -424,7 +476,7 @@
 
   <div class="article-style" itemprop="articleBody">
     
-    Restic is a command line backup tool written in Google go language. This tool totally rocks. You start by defining a backup repository that can be a local file system path, SFTP server, AWS S3, Minio server backed by S3, or various other ways. Restic is open source and has docs on how to expand its capabilities like adding your own backup target perhaps a SQL Database, etc. Lets look at a simple example of creating a local repo for the backups.
+    Restic is a command line backup tool written in Googles go language. This tool totally rocks. You start by defining a backup repository that can be a local file system path, SFTP server, AWS S3, Minio server backed by S3, or various other ways. Restic is open source and has docs on how to expand its capabilities like adding your own backup target perhaps a SQL Database, etc. Lets look at a simple example of creating a local repo for the backups.
     
   </div>
   <p class="read-more">
@@ -619,71 +671,6 @@ git push origin master Pull from remote repository:
   </div>
   <p class="read-more">
     <a href="https://qawarrior.github.io/2014/05/29/credential-io-script" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="https://qawarrior.github.io/2010/09/10/save-html-as-docx" itemprop="url">Save HTML as DOCX</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2010-09-10 16:17:00 &#43;0000 UTC" itemprop="datePublished">
-      Fri, Sep 10, 2010
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/functions">Functions</a
-    >, 
-    
-    <a href="/tags/powershell">Powershell</a
-    >, 
-    
-    <a href="/tags/projects">Projects</a
-    >, 
-    
-    <a href="/tags/scripts">Scripts</a
-    >, 
-    
-    <a href="/tags/cmdlets">Cmdlets</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    the other day we had a need to save an HTML file as DOCX. We are creating the HTML file using ConvertT0-HTML. The file contains data that needs to be saved in SharePoint and needs to be editable by others. We decided to save as a DOCX because those in management all have WORD installed but don't have a&#160; Dedicated HTML editor. So here is the Code Enjoy.
-!!! YOU MUST HAVE WORD 2007 or 2010 INSTALLED !
-    
-  </div>
-  <p class="read-more">
-    <a href="https://qawarrior.github.io/2010/09/10/save-html-as-docx" class="btn btn-primary btn-outline">
       CONTINUE READING
     </a>
   </p>
